@@ -1,0 +1,64 @@
+body {
+  background: #393e46;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.dice {
+  display: inline-block;
+  margin: 20px;
+}
+
+img {
+  width: 120px;
+  transition: transform 0.2s;
+}
+
+button#rollButton {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background: #00adb5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button#rollButton:hover {
+  background: #007b83;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
+  color: #00adb5;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Dice shake animation */
+.shake {
+  animation: shake 4.8s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-40deg); }
+  40% { transform: rotate(40deg); }
+  60% { transform: rotate(-20deg); }
+  80% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
